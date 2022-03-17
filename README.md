@@ -2,12 +2,13 @@
 Sample codes for basic Roboin Curriculum projects
 
 Level 1
-> - 거북목 방지기(Arduino, C++)
+> - 거북목 방지기(Arduino)
 > - 선풍기(RaspberrtPi, Python3.9)
 > - 동방탐방(알아서!)
 
 Level 2
-> - 알람시계(Arduino, C++)
+> - 알람시계(Arduino)
+> - 차단봉(Arduino)
 > - 엔코더모터 PID제어
 
 Level 3
