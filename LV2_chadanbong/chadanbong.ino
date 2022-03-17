@@ -36,7 +36,6 @@ void setup() {
   Serial.begin(9600);
   pinMode(trig, OUTPUT);
   pinMode(echo, INPUT);
-  pinMode(led, OUTPUT)
   myservo.attach(9);
 }
 
@@ -44,11 +43,12 @@ void loop() {
   act_distance = get_distance();
   if(act_distance < ref_distance){
     myservo.write(open);
-    Serial.println("object detected in %f distance - opening the gate", act_distance);
+    Serial.print("object detected in ");
+    Serial.print(act_distance);
+    Serial.print(" cm, opeing gate\n");
     delay(5000);
   }
   else{
-    println("no object detected");
+    Serial.println("no object detected");
   }
 }
-
